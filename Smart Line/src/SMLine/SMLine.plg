@@ -1,0 +1,71 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SMLine - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x412 /fo"Debug/SMLine.res" /d "_DEBUG" /d "_AFXDLL" "G:\MAC OB Seminar\trunk\디자인 패턴\01. State Pattern\src\SMLine\SMLine.rc"" 
+Creating temporary file "C:\Users\MYOUNG~1.NA\AppData\Local\Temp\RSPFE7D.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/SMLine.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\MAC OB Seminar\trunk\디자인 패턴\01. State Pattern\src\SMLine\ChildFrm.cpp"
+"G:\MAC OB Seminar\trunk\디자인 패턴\01. State Pattern\src\SMLine\LDState.cpp"
+"G:\MAC OB Seminar\trunk\디자인 패턴\01. State Pattern\src\SMLine\LDStateMgr.cpp"
+"G:\MAC OB Seminar\trunk\디자인 패턴\01. State Pattern\src\SMLine\MainFrm.cpp"
+"G:\MAC OB Seminar\trunk\디자인 패턴\01. State Pattern\src\SMLine\SMLine.cpp"
+"G:\MAC OB Seminar\trunk\디자인 패턴\01. State Pattern\src\SMLine\SMLineDoc.cpp"
+"G:\MAC OB Seminar\trunk\디자인 패턴\01. State Pattern\src\SMLine\SMLineView.cpp"
+]
+Creating command line "cl.exe @C:\Users\MYOUNG~1.NA\AppData\Local\Temp\RSPFE7D.tmp" 
+Creating temporary file "C:\Users\MYOUNG~1.NA\AppData\Local\Temp\RSPFE7E.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/SMLine.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\MAC OB Seminar\trunk\디자인 패턴\01. State Pattern\src\SMLine\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\MYOUNG~1.NA\AppData\Local\Temp\RSPFE7E.tmp" 
+Creating temporary file "C:\Users\MYOUNG~1.NA\AppData\Local\Temp\RSPFE8F.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/SMLine_D.pdb" /debug /machine:I386 /out:"Debug/SMLine_D.exe" /pdbtype:sept 
+".\Debug\ChildFrm.obj"
+".\Debug\LDState.obj"
+".\Debug\LDStateMgr.obj"
+".\Debug\MainFrm.obj"
+".\Debug\SMLine.obj"
+".\Debug\SMLineDoc.obj"
+".\Debug\SMLineView.obj"
+".\Debug\StdAfx.obj"
+".\Debug\SMLine.res"
+]
+Creating command line "link.exe @C:\Users\MYOUNG~1.NA\AppData\Local\Temp\RSPFE8F.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ChildFrm.cpp
+LDState.cpp
+LDStateMgr.cpp
+MainFrm.cpp
+SMLine.cpp
+SMLineDoc.cpp
+SMLineView.cpp
+G:\MAC OB Seminar\trunk\디자인 패턴\01. State Pattern\src\SMLine\SMLineView.cpp(142) : error C2039: 'GetObj' : is not a member of 'CLDStateMgr'
+        g:\mac ob seminar\trunk\디자인 패턴\01. state pattern\src\smline\ldstate.h(165) : see declaration of 'CLDStateMgr'
+G:\MAC OB Seminar\trunk\디자인 패턴\01. State Pattern\src\SMLine\SMLineView.cpp(142) : error C2065: 'GetObj' : undeclared identifier
+G:\MAC OB Seminar\trunk\디자인 패턴\01. State Pattern\src\SMLine\SMLineView.cpp(142) : error C2227: left of '->m_pLDState' must point to class/struct/union
+G:\MAC OB Seminar\trunk\디자인 패턴\01. State Pattern\src\SMLine\SMLineView.cpp(142) : error C2227: left of '->m_fnOnMouseMove' must point to class/struct/union
+Generating Code...
+Error executing cl.exe.
+Creating command line "bscmake.exe /nologo /o"Debug/SMLine.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\ChildFrm.sbr" ".\Debug\LDState.sbr" ".\Debug\LDStateMgr.sbr" ".\Debug\MainFrm.sbr" ".\Debug\SMLine.sbr" ".\Debug\SMLineDoc.sbr" ".\Debug\SMLineView.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+SMLine_D.exe - 4 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

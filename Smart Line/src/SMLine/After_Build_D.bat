@@ -1,0 +1,1 @@
+copy .\Debug\SMLine_D.exe ..\..\bin
